@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  sentiment_analysis:
+    build: .
+    ports:
+      - 8501:8501
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    restart: always
+    networks:
+      - app
+    container_name: sentiment_analysis
+
+networks:
+  app:
+    driver: bridge
