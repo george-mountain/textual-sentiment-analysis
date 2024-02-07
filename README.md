@@ -1,4 +1,4 @@
-# textual-sentiment-analysis
+# Textual-sentiment-analysis
 
 ### Full Stack AI Engineer Interview Question
 
@@ -31,7 +31,7 @@ Note: The selection of an AI model for this task is flexible, ranging from utili
 9. Assess the performance of the AI system using the provided evaluation datasets. The system's performance should be evaluated by comparing predicted sentimental scores against ground truth outputs. Classify the system's performance as "Correct" if the predicted scores match the ground truth, and "Incorrect" otherwise. Ensure the implementation of readable code for this evaluation.
 
 **Evaluation Data**:
-
+```bash
 evaluation_data = [
     {
         "user_input":"""
@@ -107,6 +107,7 @@ evaluation_data = [
     },
     
 ]
+```
 
 
 **Optional Task**:
