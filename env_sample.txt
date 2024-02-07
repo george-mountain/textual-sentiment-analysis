@@ -1,0 +1,2 @@
+OPENAI_API_KEY=youropenaikey
+COMET_API_KEY=yourcometapikey
