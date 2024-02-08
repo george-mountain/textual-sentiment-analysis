@@ -1,4 +1,4 @@
-# Textual-sentiment-analysis
+# Textual Sentimen Analysis
 
 ### Full Stack AI Engineer Interview Question
 
@@ -115,7 +115,7 @@ Consider implementing logging and tracking mechanisms for experiments or the eva
 
 --------------------------------------------
 
-### Project Demo
+### Project Demo (Solution)
 
 ![text-sentiment-gui-demo](https://github.com/george-mountain/textual-sentiment-analysis/assets/19597087/eb1fa12e-9330-43d7-8cf8-3a0c244c1647)
 
@@ -152,9 +152,9 @@ streamlit run app.py
 ```
 
 2. With Docker:
-Make sure you have Docker installed on your machine if you want to use the Dockerfiles in this project, otherwise, you have to run the application locally.
+Make sure you have Docker installed on your machine if you want to use the Dockerfile in this project, otherwise, you have to run the application locally.
 
-Use the provided Makefile to build and run the Docker containers:
+Use the provided Makefile to build and run the Docker container:
 
 ```bash
 make build
