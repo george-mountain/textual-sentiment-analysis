@@ -1,4 +1,4 @@
-# Textual Sentimen Analysis
+# Textual Sentimental Analysis
 
 ### Full Stack AI Engineer Interview Question
 
