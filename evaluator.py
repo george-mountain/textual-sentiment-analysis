@@ -154,5 +154,5 @@ if __name__ == "__main__":
     evaluation_results, evaluation_df = evaluator.evaluate_response(evaluation_data)
 
     # pprint(evaluation_results)
-
+    evaluation_df.to_csv("predictions.csv")
     pprint(evaluation_df)
