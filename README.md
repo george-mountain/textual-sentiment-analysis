@@ -146,6 +146,18 @@ Consider implementing logging and tracking mechanisms for experiments or the eva
 ### Running the Application
 There are two ways you can run the application:
 1. Without Docker:
+Create and Activate a Virtual Environment
+
+```bash
+python3 -m venv env
+source env/bin/activate
+```
+Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
 Navigate to the project root directory and run the streamlit app:
 ```bash
 streamlit run app.py
