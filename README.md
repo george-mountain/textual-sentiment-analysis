@@ -117,5 +117,70 @@ Consider implementing logging and tracking mechanisms for experiments or the eva
 
 --------------------------------------------
 
-To run this code, you need to create a .env file on the project root directory and add your OpenAI and COMET API key as illustrated on the env-sample.txt file.
+### Project Demo
+
+
+
+---------------------------------------------
+
+### Getting Started
+
+1. Fork/Clone the repository:
+
+
+2. Create a `.env` file on the project root directory and add your OpenAI and COMET API key:
+
+   ```env
+   OPENAI_API_KEY=youropenaikey
+   COMET_API_KEY=yourcometapikey
+   ```
+
+
+
+### Running the Application
+There are two ways you can run the application:
+1. Without Docker:
+Navigate to the project root directory and run the streamlit app:
+```bash
+streamlit run app.py
+```
+
+2. With Docker:
+Make sure you have Docker installed on your machine if you want to use the Dockerfiles in this project, otherwise, you have to run the application locally.
+
+Use the provided Makefile to build and run the Docker containers:
+
+```bash
+make build
+make up
+```
+
+This will build the necessary Docker images and start the services.
+
+### Usage
+
+1. Access the Streamlit interface by navigating to [http://localhost:8501](http://localhost:8501) in your web browser.
+
+2. Enter your input text which you want to analyse in the input field and click submit.
+
+3. After the sentimental analysis, the results/plots will be displayed dynamically in the web interface.
+
+### Docker Compose
+
+The project uses Docker Compose to manage the deployment service. The `docker-compose.yml`
+
+### Makefile Commands
+
+- `make build`: Build Docker images.
+- `make up`: Start Docker containers in detached mode.
+- `make up-v`: Start Docker containers in the foreground.
+- `make down`: Stop and remove Docker containers.
+- `make down-v`: Stop and remove Docker containers along with volumes.
+- `make status`: Show status of Docker containers.
+- `make show-logs`: Display logs of all Docker containers.
+- `make restart`: Restart Docker containers.
+- `make prune`: Remove unused Docker resources.
+- `make remove-images`: Remove all Docker images.
+- `make stop-container`: Stop a specific Docker container.
+- `make remove-container`: Remove a specific Docker container.
 
